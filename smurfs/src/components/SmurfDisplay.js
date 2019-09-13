@@ -23,7 +23,7 @@ function SmurfDisplay(props) {
       {props.smurfs && props.smurfs.map(smurf =>
       
               <>
-                <div>{smurf.name},{smurf.age}</div>
+                <div>{smurf.name} age:{smurf.age}, height:{smurf.height}</div>
                 
                 <button onClick={() => removeSmurf(smurf.id)}>Remove Smurf</button>
               </>
